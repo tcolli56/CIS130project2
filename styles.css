@@ -1,0 +1,63 @@
+/* Accessibiliy Notes
+
+
+
+
+https://webaim.org/resources/contrastchecker/
+
+8.42:1 Contrast Ratio (black/green)
+Passing 
+Small Text 4.5:1 filter
+
+2.28:1 Contrast Ratio (whitesmoke/green)
+Failing
+Large Text 3:1 filter
+Changed Whitesmoke to black for large text
+
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif, 'Times New Roman', serif;
+  color: black;
+  background-color: rgb(76, 187, 23);
+}
+
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+h1, h3, h4 {
+  color: black;
+  text-align: center;
+}
+
+img {
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Decided to use the grid since I could set up the information to be displayed in columns and rows like a spreadsheet. Each event has the repeats the same information so a grid was the simple choice. */
+
+.events {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: whitesmoke;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+/* Accessibiliy Notes for .events
+https://webaim.org/resources/contrastchecker/
+
+19.26:1 Contrast Ratio (black/whitesmoke)
+Passing 
+Small Text 4.5:1 filter
+Large Text 3:1 filter
+
+*/
